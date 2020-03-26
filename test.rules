@@ -1,1 +1,1 @@
-alert tcp $EXTERNAL_NET any -> any 1080 (flags:URG; msg:”TEST ALERT;” ; content:”hostip”; nocase; offset:10; depth:20;)
+alert tcp any any -> any 1080 (flags:U; msg:"TEST ALERT;" ; content:"hostip"; nocase; offset:10; depth:10; sid:10000001;)
